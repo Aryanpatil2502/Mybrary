@@ -22,6 +22,9 @@ app.set('layout', 'layouts/layout')
 app.use(expressLayouts)
 app.use(express.static('public'))
 app.use(express.urlencoded({ extended: false }))
+//app.use(express.json({ limit: '10mb' }))
+
+
 
 mongoose.connect(process.env.DATABASE_URL)
 
